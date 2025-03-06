@@ -26,8 +26,7 @@ public class Employee {
     }
 
     // Constructor with all fields
-    public Employee(Long id, String name, String department, double salary) {
-        this.id = id;
+    public Employee(String name, String department, double salary) {
         this.name = name;
         this.department = department;
         this.salary = salary;
@@ -78,7 +77,10 @@ public class Employee {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Employee employee = (Employee) o;
-        return Double.compare(employee.salary, salary) == 0 && id.equals(employee.id) && name.equals(employee.name) && department.equals(employee.department);
+        return Double.compare(employee.salary, salary) == 0 &&
+                Objects.equals(id, employee.id) &&
+                Objects.equals(name, employee.name) &&
+                Objects.equals(department, employee.department);
     }
 
     @Override
