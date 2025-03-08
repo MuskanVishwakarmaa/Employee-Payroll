@@ -6408,3 +6408,19 @@ Unconditional classes:
 2025-03-09T00:11:08.419+05:30 DEBUG 8092 --- [EmployeePayrollApp] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Employee(id=1, name=Alice, department=HR, salary=50000.0), Employee(id=2, name=Bob, department=IT,  (truncated)...]
 2025-03-09T00:11:08.444+05:30 DEBUG 8092 --- [EmployeePayrollApp] [http-nio-8080-exec-2] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
 2025-03-09T00:11:08.445+05:30 DEBUG 8092 --- [EmployeePayrollApp] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-09T00:24:06.465+05:30 DEBUG 8092 --- [EmployeePayrollApp] [SpringApplicationShutdownHook] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2025-03-09T00:24:06.466+05:30 DEBUG 8092 --- [EmployeePayrollApp] [SpringApplicationShutdownHook] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@32c7ebf7, started on Sun Mar 09 00:08:16 IST 2025
+2025-03-09T00:24:06.468+05:30 DEBUG 8092 --- [EmployeePayrollApp] [SpringApplicationShutdownHook] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147482623
+2025-03-09T00:24:06.476+05:30  INFO 8092 --- [EmployeePayrollApp] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-09T00:24:06.482+05:30  INFO 8092 --- [EmployeePayrollApp] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-09T00:24:06.482+05:30 DEBUG 8092 --- [EmployeePayrollApp] [SpringApplicationShutdownHook] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147481599
+2025-03-09T00:24:06.482+05:30 DEBUG 8092 --- [EmployeePayrollApp] [tomcat-shutdown] o.s.c.support.DefaultLifecycleProcessor  : Bean 'webServerGracefulShutdown' completed its stop procedure
+2025-03-09T00:24:06.484+05:30 DEBUG 8092 --- [EmployeePayrollApp] [SpringApplicationShutdownHook] o.s.c.support.DefaultLifecycleProcessor  : Bean 'webServerStartStop' completed its stop procedure
+2025-03-09T00:24:06.484+05:30 DEBUG 8092 --- [EmployeePayrollApp] [SpringApplicationShutdownHook] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 1073741823
+2025-03-09T00:24:06.484+05:30 DEBUG 8092 --- [EmployeePayrollApp] [SpringApplicationShutdownHook] o.s.c.support.DefaultLifecycleProcessor  : Bean 'applicationTaskExecutor' completed its stop procedure
+2025-03-09T00:24:06.484+05:30 DEBUG 8092 --- [EmployeePayrollApp] [SpringApplicationShutdownHook] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147483647
+2025-03-09T00:24:06.484+05:30 DEBUG 8092 --- [EmployeePayrollApp] [SpringApplicationShutdownHook] o.s.c.support.DefaultLifecycleProcessor  : Bean 'springBootLoggingLifecycle' completed its stop procedure
+2025-03-09T00:24:06.485+05:30 DEBUG 8092 --- [EmployeePayrollApp] [SpringApplicationShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2025-03-09T00:24:06.485+05:30  INFO 8092 --- [EmployeePayrollApp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-09T00:24:06.487+05:30  INFO 8092 --- [EmployeePayrollApp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-09T00:24:06.494+05:30  INFO 8092 --- [EmployeePayrollApp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
